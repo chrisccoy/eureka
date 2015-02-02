@@ -4,6 +4,7 @@ security:
   user:
     password: ${eureka.password} # Don't use a default password in a real app
 
+
 eureka:
   client:
     registerWithEureka: false
@@ -18,6 +19,7 @@ spring:
 eureka:
   instance:
     hostname: 127.0.1.1
+    preferIpAddress: true
   client:
     registerWithEureka: true
     fetchRegistry: true
